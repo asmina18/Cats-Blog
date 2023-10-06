@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+//eto glavniy 
+
+.styleContainer {
+    margin-top: 2rem;
+    color: #7fab92;
+    font-family: 'Roboto Condensed';
+    font-size: 1rem;
+    box-shadow: 0 5px 9px 5px rgba(0, 0, 0, 0.1); // Dobavlen tien
+    // border: solid  #1c1544; // eto container ya ne polzuus 
+   
+ 
+
+// eto vnutreniy Cantainer toje ne trogaem 
+    .gridContainer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    } 
+    // Eto uje nasha DropDown tut nachinaetsya{toje ne trogaem}
+    select {
+        width: 10%;
+        padding: 10px;
+        margin-top: 1rem;
+        margin-left: 1rem;
+        font-size: 16px;
+        border: 2px;
+        background: #7fab92;
+        border-radius: 4px;
+        box-shadow: 0 5px 6px 6px rgba(6, 4, 4, 0.1); // Dobavlen tien
+
+        select:hover {
+            background: #3817f4; //?? ne rabotaet Izmenenie tsveta pri hover
+        }
+    }
+
+    .StyleDiv {
+        // border: 6px solid red;
+        padding: 2rem; // Vnutrenniy otladchik
+        // border: #3817f4 solid 1rem;
+        h3 {
+            font-size: 2rem;
+            text-align: center;
+            position: relative;
+    
+            &::after {
+                content: "";
+                display: block;
+                width: 40%;
+                height: 2px;
+                background-color: #7fab92; // Цвет линии
+                position: absolute;
+                bottom: -1px; // Регулирует расстояние линии от текста
+                left: 30%; // Регулирует положение линии относительно текста
+            }
+       
+    }
+
+   
+}
+// s etim nado chto to delat
+figure.ArticleStyle {
+    display: grid;
+    width: 100%;
+    grid-template-columns: 1fr 1fr ;
+    gap: 1rem;
+    margin-top:1rem;
+    margin-bottom: 2rem;
+    // border: solid #ab6922   6px;
+    
+   
+}
+
+figure {
+    position: relative;
+    overflow: hidden;
+    p {
+        font-size: 1rem;
+        font-size: 1rem
+
+    }
+    img {
+        width: 100%;
+        border-radius: 20px;
+        transition: transform 0.3s; 
+        margin: 1rem;
+    }
+
+    &:hover img {
+        transform: scale(1.1); 
+        border-radius: 20px;
+    }
+
+    & + .StyleDiv {
+        margin-top: 2rem; // Разделительное расстояние между блоками StyleDiv
+    }
+}}

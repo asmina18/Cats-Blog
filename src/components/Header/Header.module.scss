@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+
+.HeaderStyle {   
+    // border: solid 2px red;
+    // margin-bottom: 2rem;
+    h1 {
+      font-family: 'Roboto Condensed';
+      font-size: 2rem; // Umen'sheno razmera shrifta dlya luchshego sootnosheniya
+      font-weight: 400;
+      color: #7fab92;
+      text-transform: uppercase; // Sdelat text bolshim 
+      text-align: center;
+      margin: 0; // Udalen otstup ot verkhnego kraя
+      padding: 1em; // Dobavlen otstup k vnutrennim krayam h1
+     
+    }
+  
+    div {
+      
+      img {
+        width: 100%;
+        border-radius: 20px;
+        display: block; // Dobavleno, chtoby izobrazhenie pravil'no otrisovyvalos'
+      }
+    }
+  }
