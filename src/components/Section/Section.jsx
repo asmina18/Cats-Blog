@@ -2,7 +2,6 @@
 import { useQuery } from "@tanstack/react-query";
 import { getPostPage } from "../../queries/getPostPage";
 import { request } from "graphql-request";
-import { SkewLoader  } from "react-loader-spinner";
 import style from "./Section.module.scss";
 import React, { useEffect, useState } from "react";
 
@@ -62,8 +61,7 @@ export function Section() {
         <section>
             {isLoading ? (
             <>
-                <SkewLoader style={{ color: '#85378d' }} />
-                // Viser "Indlæser..." under indlæsning
+
                 <p>Indlæser...</p>
                 </>
                 ) : error ? (
@@ -74,7 +72,7 @@ export function Section() {
 
                     {/* Dropdown-menu til valg af sorteringsmulighed */}
                     <div >
-                        <select key={sortingDropdown} onChange={(event) => dropDown(event.target.value)}>
+                        <select  onChange={(event) => dropDown(event.target.value)}>
                             <option value="1">Dato</option>
                             <option value="2">Titel</option>
                         </select>
